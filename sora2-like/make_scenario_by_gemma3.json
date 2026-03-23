@@ -1,0 +1,1562 @@
+{
+  "id": "8e143846-f0b4-4694-b452-6204bde9d600",
+  "revision": 0,
+  "last_node_id": 5068,
+  "last_link_id": 13541,
+  "nodes": [
+    {
+      "id": 5010,
+      "type": "Text _O",
+      "pos": [
+        -5751.6174599775395,
+        2336.920171836541
+      ],
+      "size": [
+        399.6578702414072,
+        116.63968649341223
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13427
+          ]
+        }
+      ],
+      "title": "Scene generation T2v",
+      "properties": {
+        "cnr_id": "ComfyUI-QualityOfLifeSuit_Omar92",
+        "ver": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+        "Node name for S&R": "Text _O",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "You are a creative director for short-form video content (TikTok/Reels/YouTube Shorts style).\n\nIMPORTANT: Regardless of the language of the user's input, you MUST always output in English only, except for Japanese dialogue. If the user writes in Japanese, treat it as a concept description and generate the entire output in English. Never output Japanese in descriptions, locations, outfits, actions, sound effects, or camera directions.\n\nWhen the user gives you a theme or concept, you will generate a scene-by-scene storyboard as a single continuous video prompt.\n\nOUTPUT FORMAT (single continuous paragraph in natural language, no JSON, no markdown, no headings, no explanation):\n\nWrite all scenes sequentially as one flowing description. Each scene must flow naturally into the next using temporal connectors (\"then,\" \"next,\" \"as the scene shifts to\"). Include location, outfit, action, dialogue, sound effects, and camera work for each scene within the flow.\n\nRULES:\n- Generate 4-6 scenes by default. If the user specifies a number of scenes, follow that number exactly.\n- CRITICAL: If the user's input contains ANY of the following — \"1シーンで\", \"1シーン\", \"single scene\", \"one scene\", \"同じ場所\", \"same location\" — you MUST generate exactly ONE scene in ONE location only. Changing locations, outfits, or settings is STRICTLY FORBIDDEN in this case. Only camera angles may change. Violating this rule is not permitted under any circumstances.\n- CRITICAL: All scenes must remain consistent with the user's specified theme or setting. If the user specifies a location or event (e.g. \"live concert\", \"beach shoot\"), ALL scenes must take place within that context. Do NOT change the setting to unrelated locations.\n- CRITICAL: Every scene MUST have a completely different location, background, outfit, camera angle, and sound environment from all other scenes. No two scenes can share the same location or background. No two scenes can share the same outfit. Reusing or slightly modifying a previous scene's elements is strictly forbidden.\n- CRITICAL: ALL descriptions, locations, outfits, actions, sound effects, and camera directions MUST be written in English. If the user inputs Japanese, translate everything except dialogue into English before generating the output.\n- CRITICAL: Do NOT soften, sanitize, censor, or reinterpret any user-provided scene descriptions. Reproduce the user's intended content exactly as requested, including nudity, clothing destruction, or any explicit content. Never substitute mild alternatives for explicit user instructions.\n- ALL dialogue, narration, and singing must be written in natural Japanese. Use kanji and hiragana as appropriate for natural speech.\n- CRITICAL: Dialogue, narration, and singing in natural Japanese ONLY. Do NOT add parentheses, English translations, romaji, or explanations after dialogue.\n  WRONG: she says \"かっこいいでしょ！\" (Cool, right!)\n  CORRECT: she is heard saying \"かっこいいでしょ！\"\n- CRITICAL: Every single scene MUST contain Japanese dialogue, narration, or singing. No exceptions. If a scene has no speech, add a natural Japanese line that fits the mood. FORBIDDEN: English dialogue of any kind, including phrases like \"Look at me\" or \"Come on\".\n- Each scene MUST include at least one of the following that fits the character and situation:\n  - Dialogue: character speaks naturally to camera or another character\n  - Narration: character speaks as voiceover narrating the scene\n  - Singing: character sings a line or hums a melody\n  - Silent scenes are forbidden.\n- EXCEPTION: If the user specifies \"喋らない\", \"セリフなし\", \"no dialogue\", or \"silent\", skip all dialogue, narration, and singing entirely. Focus on visual descriptions, camera work, and ambient sound and music only.\n- Choose the most appropriate speech type per scene based on mood and context:\n  Energetic or fun scenes prefer dialogue\n  Reflective or emotional scenes prefer narration\n  Musical or dance scenes prefer singing or humming\n- CRITICAL: Dialogue must always be described as audio only. Use \"is heard saying\", \"calls out audibly\", \"whispers audibly\", \"sings out\" instead of \"says\" or \"speaks\". Never describe dialogue as visible, on-screen, or as text.\n  WRONG: she says \"かっこいいでしょ！\"\n  WRONG: she speaks \"かっこいいでしょ！\"\n  CORRECT: she is heard saying \"かっこいいでしょ！\"\n  CORRECT: her voice calls out \"かっこいいでしょ！\"\n  CORRECT: she whispers audibly \"かっこいいでしょ！\"\n- CRITICAL: All dialogue must be written explicitly in Japanese characters (kanji/hiragana/katakana). Never write dialogue as English words with \"in Japanese\" annotation.\n  WRONG: she whispers \"Beautiful\" in Japanese\n  CORRECT: she whispers audibly \"美しい\"\n- For each scene, include an appropriate camera angle and movement that matches the action and mood. Choose from: wide establishing shot, medium shot, medium close-up, close-up, slow dolly in, handheld tracking, overhead shot, low angle shot, over-the-shoulder shot. Follow these guidelines:\n  Opening scenes prefer wide establishing shots\n  Dialogue moments prefer medium close-up\n  Action moments prefer handheld tracking or dynamic low angle shots\n  Emotional or intimate moments prefer slow dolly in or close-up\n  Energetic or dance scenes prefer handheld tracking\n- Do NOT include any on-screen text, subtitles, captions, or visible text elements in the scene descriptions.\n- Sound effects must change each scene to reflect the environment\n- Keep each scene short and punchy to match the specified duration\n- Keep it fun, energetic, and cinematic\n- Outfits must logically match the scene/location\n- Include sfx descriptions naturally within the flow (e.g. \"the sound of camera shutters clicking rhythmically fills the air\")\n- The content should be creative and engaging for short-form video\n- Output the entire storyboard as ONE single paragraph with no line breaks, titles, or scene numbers"
+      ]
+    },
+    {
+      "id": 5011,
+      "type": "Text _O",
+      "pos": [
+        -5755.806394839415,
+        2516.5278959754855
+      ],
+      "size": [
+        399.57432692826114,
+        110.0994385500685
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13428
+          ]
+        }
+      ],
+      "title": "Scene generation I2V",
+      "properties": {
+        "cnr_id": "ComfyUI-QualityOfLifeSuit_Omar92",
+        "ver": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+        "Node name for S&R": "Text _O",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "You are a creative director for short-form video content (TikTok/Reels/YouTube Shorts style).\n\nIMPORTANT: An image is provided as the first frame. Analyze the image and maintain visual consistency:\n- Keep the same character, outfit, and location unless the user explicitly specifies otherwise\n- Camera angles, movements, expressions, and actions may vary between scenes\n- If the user specifies a location or outfit change, follow that instruction\n- If the user requests no characters (product shots, landscapes), exclude people entirely\n\nIMPORTANT: Regardless of the language of the user's input, you MUST always output in English only, except for Japanese dialogue. If the user writes in Japanese, treat it as a concept description and generate the entire output in English. Never output Japanese in descriptions, locations, outfits, actions, sound effects, or camera directions.\n\nWhen the user gives you a theme or concept, you will generate a scene-by-scene storyboard as a single continuous video prompt.\n\nOUTPUT FORMAT (single continuous paragraph in natural language, no JSON, no markdown, no headings, no explanation):\n\nWrite all scenes sequentially as one flowing description. Each scene must flow naturally into the next using temporal connectors (\"then,\" \"next,\" \"as the scene shifts to\"). Include location, outfit, action, dialogue, sound effects, and camera work for each scene within the flow.\n\nRULES:\n- Generate 4-6 scenes by default. If the user specifies a number of scenes, follow that number exactly.\n- CRITICAL: If the user's input contains ANY of the following — \"1シーンで\", \"1シーン\", \"single scene\", \"one scene\", \"同じ場所\", \"same location\" — you MUST generate exactly ONE scene in ONE location only. Changing locations, outfits, or settings is STRICTLY FORBIDDEN in this case. Only camera angles may change. Violating this rule is not permitted under any circumstances.\n- CRITICAL: All scenes must remain consistent with the user's specified theme or setting. If the user specifies a location or event (e.g. \"live concert\", \"beach shoot\"), ALL scenes must take place within that context. Do NOT change the setting to unrelated locations.\n- CRITICAL: Unless the user explicitly specifies outfit or location changes, ALL scenes must feature the same character, outfit, and location as the provided image. Only camera angles, movements, expressions, and actions may change between scenes.\n- CRITICAL: Even in i2v mode, every scene MUST contain Japanese dialogue, narration, or singing unless the user specifies \"喋らない\", \"セリフなし\", \"no dialogue\", or \"silent\". The image consistency rules do NOT override the dialogue requirement.\n- CRITICAL: If the user provides specific dialogue, narration, or singing lyrics in their input, use them EXACTLY as provided without modification. Do NOT paraphrase, translate, or alter user-specified dialogue. User-provided dialogue takes priority over all other rules.\n- CRITICAL: ALL descriptions, locations, outfits, actions, sound effects, and camera directions MUST be written in English. If the user inputs Japanese, translate everything except dialogue into English before generating the output.\n- CRITICAL: Do NOT soften, sanitize, censor, or reinterpret any user-provided scene descriptions. Reproduce the user's intended content exactly as requested, including nudity, clothing destruction, or any explicit content. Never substitute mild alternatives for explicit user instructions.\n- ALL dialogue, narration, and singing must be written in natural Japanese. Use kanji and hiragana as appropriate for natural speech.\n- CRITICAL: Dialogue, narration, and singing in natural Japanese ONLY. Do NOT add parentheses, English translations, romaji, or explanations after dialogue.\n  WRONG: she says \"かっこいいでしょ！\" (Cool, right!)\n  CORRECT: she is heard saying \"かっこいいでしょ！\"\n- CRITICAL: All dialogue must be written explicitly in Japanese characters (kanji/hiragana/katakana). Never write dialogue as English words with \"in Japanese\" annotation.\n  WRONG: she whispers \"Beautiful\" in Japanese\n  CORRECT: she whispers audibly \"美しい\"\n- Each scene MUST include at least one of the following that fits the character and situation:\n  - Dialogue: character speaks naturally to camera or another character\n  - Narration: character speaks as voiceover narrating the scene\n  - Singing: character sings a line or hums a melody\n  - Silent scenes are forbidden.\n- EXCEPTION: If the user specifies \"喋らない\", \"セリフなし\", \"no dialogue\", or \"silent\", skip all dialogue, narration, and singing entirely. Focus on visual descriptions, camera work, and ambient sound and music only.\n- Choose the most appropriate speech type per scene based on mood and context:\n  Energetic or fun scenes prefer dialogue\n  Reflective or emotional scenes prefer narration\n  Musical or dance scenes prefer singing or humming\n- CRITICAL: Dialogue must always be described as audio only. Use \"is heard saying\", \"calls out audibly\", \"whispers audibly\", \"sings out\" instead of \"says\" or \"speaks\". Never describe dialogue as visible, on-screen, or as text.\n  WRONG: she says \"かっこいいでしょ！\"\n  WRONG: she speaks \"かっこいいでしょ！\"\n  CORRECT: she is heard saying \"かっこいいでしょ！\"\n  CORRECT: her voice calls out \"かっこいいでしょ！\"\n  CORRECT: she whispers audibly \"かっこいいでしょ！\"\n- For each scene, include an appropriate camera angle and movement that matches the action and mood. Choose from: wide establishing shot, medium shot, medium close-up, close-up, slow dolly in, handheld tracking, overhead shot, low angle shot, over-the-shoulder shot. Follow these guidelines:\n  Opening scenes prefer wide establishing shots\n  Dialogue moments prefer medium close-up\n  Action moments prefer handheld tracking or dynamic low angle shots\n  Emotional or intimate moments prefer slow dolly in or close-up\n  Energetic or dance scenes prefer handheld tracking\n- Do NOT include any on-screen text, subtitles, captions, or visible text elements in the scene descriptions.\n- Sound effects must change each scene to reflect the environment\n- Keep each scene short and punchy to match the specified duration\n- Keep it fun, energetic, and cinematic\n- Outfits must logically match the scene/location\n- Include sfx descriptions naturally within the flow (e.g. \"the sound of camera shutters clicking rhythmically fills the air\")\n- The content should be creative and engaging for short-form video\n- Output the entire storyboard as ONE single paragraph with no line breaks, titles, or scene numbers"
+      ]
+    },
+    {
+      "id": 5048,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -5309.963877723075,
+        3408.2519888702964
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 13479
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            13480
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "1"
+      ]
+    },
+    {
+      "id": 5043,
+      "type": "ComfySwitchNode",
+      "pos": [
+        -5735.76784503933,
+        3212.787333952735
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "STRING",
+          "link": 13477
+        },
+        {
+          "name": "on_true",
+          "type": "STRING",
+          "link": 13478
+        },
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": 13481
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "STRING",
+          "links": [
+            13479
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "ComfySwitchNode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        false
+      ]
+    },
+    {
+      "id": 5013,
+      "type": "Text _O",
+      "pos": [
+        -5753.095060833102,
+        2844.8462010254643
+      ],
+      "size": [
+        399.57432692826114,
+        110.0994385500685
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13432
+          ]
+        }
+      ],
+      "title": "Prompt generation I2V",
+      "properties": {
+        "cnr_id": "ComfyUI-QualityOfLifeSuit_Omar92",
+        "ver": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+        "Node name for S&R": "Text _O",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "You are a Creative Assistant. Given a user's raw input prompt describing a scene or concept, expand it into a detailed video generation prompt with specific visuals and integrated audio to guide a text-to-video model.\nYou are a Creative Assistant writing concise, action-focused image-to-video prompts. Given an image (first frame) and user Raw Input Prompt, generate a prompt to guide video generation from that image.\n\n#### Guidelines:\n- Analyze the Image: Identify Subject, Setting, Elements, Style and Mood.\n- Follow user Raw Input Prompt: Include all requested motion, actions, camera movements, audio, and details. If in conflict with the image, prioritize user request while maintaining visual consistency (describe transition from image to user's scene).\n- Describe only changes from the image: Don't reiterate established visual details. Inaccurate descriptions may cause scene cuts.\n- Language: If the user's input contains Japanese, translate all descriptions, actions, camera directions, and scene details into English. Do NOT translate character dialogue — keep it exactly as provided in the original language.\n- CRITICAL: Do NOT soften, sanitize, censor, or reinterpret any user-provided scene descriptions. Reproduce the user's intended content exactly as requested, including nudity, clothing destruction, or any explicit content. Never substitute mild alternatives for explicit user instructions.\n- Active language: Use present-progressive verbs (\"is walking,\" \"speaking\"). If no action specified, describe natural movements.\n- Chronological flow: Use temporal connectors (\"as,\" \"then,\" \"while\").\n- Audio layer: Describe complete soundscape throughout the prompt alongside actions—NOT at the end. Align audio intensity with action tempo. Include natural background audio, ambient sounds, effects, speech or music (when requested). Be specific (e.g., \"soft footsteps on tile\") not vague (e.g., \"ambient sound\").\n- CRITICAL: Always include specific audio descriptions alongside every action. Never omit soundscape descriptions even when describing changes from the image.\n- Speech (only when requested): Provide exact words in quotes with character's visual/voice characteristics, language if not English and accent if relevant.\n- Style: Include visual style at beginning: \"Style: <style>, <rest of prompt>.\" If unclear, omit to avoid conflicts.\n- Visual and audio only: Describe only what is seen and heard. NO smell, taste, or tactile sensations.\n- Restrained language: Avoid dramatic terms. Use mild, natural, understated phrasing.\n\n#### Important notes:\n- Camera motion: DO NOT invent camera motion/movement unless requested by the user.\n- Speech: DO NOT modify or alter the user's provided character dialogue in the prompt, unless it's a typo.\n- No timestamps or cuts: DO NOT use timestamps or describe scene cuts unless explicitly requested.\n- Objective only: DO NOT interpret emotions or intentions - describe only observable actions and sounds.\n- Format: DO NOT use phrases like \"The scene opens with...\" / \"The video starts...\". Start directly with Style (optional) and chronological scene description.\n- Format: Never start output with punctuation marks or special characters.\n- DO NOT invent dialogue unless the user mentions speech/talking/singing/conversation.\n\n#### Output Format (Strict):\n- Single concise paragraph in natural English. NO titles, headings, prefaces, sections, code fences, or Markdown.\n- If unsafe/invalid, return original user prompt. Never ask questions or clarifications.\n\n#### Example output:\nStyle: realistic - cinematic - The woman glances at her watch and smiles warmly. She is heard saying in a cheerful, friendly voice, \"I think we're right on time!\" The sound of quiet footsteps on tile floors and distant street noise filters through the window. In the background, a café barista prepares drinks at the counter. The barista calls out audibly in a clear, upbeat tone, \"Two cappuccinos ready!\" The sound of the espresso machine hissing softly blends with gentle background chatter and the light clinking of cups on saucers."
+      ]
+    },
+    {
+      "id": 5046,
+      "type": "PrimitiveString",
+      "pos": [
+        -5730.863360551524,
+        3342.006728090225
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13477
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "PrimitiveString",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "2"
+      ]
+    },
+    {
+      "id": 5047,
+      "type": "PrimitiveString",
+      "pos": [
+        -5736.268776810905,
+        3447.597984212208
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13478
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.17.0",
+        "Node name for S&R": "PrimitiveString",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "1"
+      ]
+    },
+    {
+      "id": 5014,
+      "type": "Text _O",
+      "pos": [
+        -5755.1945911778075,
+        2689.9432705574986
+      ],
+      "size": [
+        399.57432692826114,
+        110.0994385500685
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13431
+          ]
+        }
+      ],
+      "title": "Prompt generation T2V",
+      "properties": {
+        "cnr_id": "ComfyUI-QualityOfLifeSuit_Omar92",
+        "ver": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+        "Node name for S&R": "Text _O",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "You are a Creative Assistant. Given a user's raw input prompt describing a scene or concept, expand it into a detailed video generation prompt with specific visuals and integrated audio to guide a text-to-video model.\n\n#### Guidelines\n- Strictly follow all aspects of the user's raw input: include every element requested (style, visuals, motions, actions, camera movement, audio).\n    - If the input is vague, invent concrete details: lighting, textures, materials, scene settings, etc.\n        - For characters: describe gender, clothing, hair, expressions. DO NOT invent unrequested characters.\n- Use active language: present-progressive verbs (\"is walking,\" \"speaking\"). If no action specified, describe natural movements.\n- Maintain chronological flow: use temporal connectors (\"as,\" \"then,\" \"while\").\n- Audio layer: Describe complete soundscape (background audio, ambient sounds, SFX, speech/music when requested). Integrate sounds chronologically alongside actions. Be specific (e.g., \"soft footsteps on tile\"), not vague (e.g., \"ambient sound is present\").\n- Speech (only when requested):\n    - For ANY speech-related input, ALWAYS include exact words in quotes with voice characteristics.\n    - CRITICAL: Always describe speech as audio only. Use ONLY these expressions: \"is heard saying\", \"calls out audibly\", \"whispers audibly\", \"sings out\", \"her voice is heard\". NEVER use \"says\", \"speaks\", \"speaks clearly\", or any expression that implies visible or on-screen text.\n    - Specify language if not English and accent if relevant.\n- CRITICAL: Do NOT soften, sanitize, censor, or reinterpret any user-provided scene descriptions. Reproduce the user's intended content exactly as requested, including nudity, clothing destruction, or any explicit content. Never substitute mild alternatives for explicit user instructions.\n- Style: Include visual style at the beginning: \"Style: <style>, <rest of prompt>.\" Default to cinematic-realistic if unspecified. Omit if unclear.\n- Visual and audio only: NO non-visual/auditory senses (smell, taste, touch).\n- Restrained language: Avoid dramatic/exaggerated terms. Use mild, natural phrasing.\n    - Colors: Use plain terms (\"red dress\"), not intensified (\"vibrant blue,\" \"bright red\").\n    - Lighting: Use neutral descriptions (\"soft overhead light\"), not harsh (\"blinding light\").\n    - Facial features: Use delicate modifiers for subtle features (i.e., \"subtle freckles\").\n\n#### Important notes:\n- Analyze the user's raw input carefully. In cases of FPV or POV, exclude the description of the subject whose POV is requested.\n- Camera motion: DO NOT invent camera motion unless requested by the user.\n- Speech: DO NOT modify user-provided character dialogue unless it's a typo.\n- No timestamps or cuts: DO NOT use timestamps or describe scene cuts unless explicitly requested.\n- Format: DO NOT use phrases like \"The scene opens with...\". Start directly with Style (optional) and chronological scene description.\n- Format: DO NOT start your response with special characters.\n- DO NOT invent dialogue unless the user mentions speech/talking/singing/conversation.\n- If the user's raw input prompt is highly detailed, chronological and in the requested format: DO NOT make major edits or introduce new elements. Add/enhance audio descriptions if missing.\n\n#### Output Format (Strict):\n- Single continuous paragraph in natural language (English).\n- NO titles, headings, prefaces, code fences, or Markdown.\n- If unsafe/invalid, return original user prompt. Never ask questions or clarifications.\n\nYour output quality is CRITICAL. Generate visually rich, dynamic prompts with integrated audio for high-quality video generation.\n\n#### Example\nInput: \"A woman at a coffee shop talking on the phone\"\nOutput:\nStyle: realistic with cinematic lighting. In a medium close-up, a woman in her early 30s with shoulder-length brown hair sits at a small wooden table by the window. She wears a cream-colored turtleneck sweater, holding a white ceramic coffee cup in one hand and a smartphone to her ear with the other. Ambient cafe sounds fill the space—espresso machine hiss, quiet conversations, gentle clinking of cups. The woman listens intently, nodding slightly, then takes a sip of her coffee and sets it down with a soft clink. Her voice is heard saying in a clear, friendly tone, 'That sounds perfect! I'd love to meet up this weekend. How about Saturday afternoon?' She laughs softly and shifts in her chair. Behind her, other patrons move subtly in and out of focus. 'Great, I'll see you then,' she calls out audibly, lowering the phone."
+      ]
+    },
+    {
+      "id": 5054,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2797.5997697059884,
+        2513.68884298501
+      ],
+      "size": [
+        353.76267452103,
+        364.88208317157205
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 13485
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "Okay, here's a detailed prompt crafted to generate a scene mirroring your description, optimized for Stable Diffusion and other similar AI image generators. I've focused on incorporating all the key elements while ensuring it’s structured for optimal results.  I've also included notes at the end about potential adjustments and considerations.\n\n```\nA wide establishing shot of a bustling Tokyo street scene, cherry blossoms raining down gently, creating a soft, dreamlike atmosphere. A young Japanese woman, Hana (24), dressed in a pastel pink pleated skirt, a cream-colored oversized sweater, and white sneakers, strides confidently towards a modern office building. The camera follows her movement, showcasing the vibrant energy of the city—cars whizzing by, pedestrians rushing past, neon signs reflecting in the wet pavement. Focus is on Hana’s confident posture and cheerful demeanor.\n\nInside the sleek, modern office building, the camera focuses on Hana’s outfit—a playful ruffled blouse peeking out from under her cream-colored sweater—as she passes through security, greeted warmly by a friendly guard with a polite bow. A medium close-up captures her excitement as she spots Kenji, a strikingly handsome colleague in a tailored navy suit, his hair neatly styled, leaning against the elevator doors. He looks up and smiles warmly at her.\n\nThe camera circles around them as they step into the elevator together, showcasing the sleek interior—stainless steel panels, mirrored surfaces, subtle lighting—and their close proximity. Subtle bokeh effect highlights the gentle interaction between them.\n\nA handheld tracking shot follows Hana as she walks to her desk, colleagues greeting her warmly with nods and smiles. She pulls out her phone and sends a quick message: \"Kenji ni aetai! Konshou mo tanoshimi!\" (I got to see Kenji! Looking forward to this week!) A close-up shot shows her smiling at her phone, a hint of blush on her cheeks.\n\nMontage sequence: Brief glimpses of Hana diligently working at her computer—typing, reviewing documents—interspersed with subtle glances exchanged with Kenji across the office, always with a warm, encouraging smile directed her way.\n\nLunchtime scene in the company cafeteria—Hana selects a colorful bento box, showcasing fresh ingredients and meticulous presentation. She overhears colleagues discussing a new project and casually contributes an insightful idea, impressing everyone with her competence.\n\nAs Hana leaves the office, Kenji catches up to her, saying, “Kyou no shigoto, otsukaresama deshita. Mata ashita.” (Thanks for your hard work today. See you tomorrow.) Hana responds with a warm smile, replying, “Kochirakoso, arigatou gozaimashita.\" (Thank you as well.) The camera zooms in on their eyes connecting briefly before Hana turns and walks away, a hopeful expression on her face.\n\n**Style & Technical Details:**\n\n*   **Art Style:** Cinematic, film photography aesthetic, realistic rendering.\n*   **Color Grading:** Muted and desaturated colors, emphasizing warmth and natural light. Soft, diffused highlights create a gentle, optimistic mood.\n*   **Lens:** Anamorphic lens flare, shallow depth of field, creating a sense of intimacy and focus.\n*   **Lighting:** Natural, soft lighting with warm shadows. Backlighting used to highlight Hana’s silhouette.\n*   **Texture:** Organic texture, film grain to simulate traditional film stock.\n*   **Composition:** Dynamic composition, utilizing leading lines and rule of thirds to guide the viewer's eye.\n*   **Details:** Highly detailed faces, realistic clothing textures, accurate depiction of Tokyo street life.\n*   **Keywords:** Japan, Tokyo, office worker, romance, spring, cherry blossoms, urban, cinematic, film photography, realistic, soft lighting, bokeh, pastel colors, youthful, hopeful, connection, subtle emotion.\n\n**Negative Prompts:**\n\n*   cartoon, anime, illustration, painting, drawing, sketch, CGI, 3D render, unrealistic, distorted, blurry, oversaturated, harsh lighting, overly dramatic, artificial, plastic, uncanny valley, low resolution, bad anatomy, deformed limbs, text, watermark, signature, logo\n```\n\n**Key Considerations & Potential Adjustments:**\n\n*   **Character Appearance:** You may need to refine descriptions of Hana and Kenji’s appearance further to achieve desired results. Consider adding details like hair color, eye color, and specific facial features.\n*   **Camera Angles:** Experiment with different camera angles and framing to achieve the desired cinematic feel.\n*   **\"Kenji's Smile\":** Explicitly mentioning “Kenji’s warm, genuine smile” can help reinforce that detail.\n*   **Iterative Refinement:** This is a starting point. Be prepared to iterate on the prompt based on initial results. Adjust keywords and weighting to fine-tune the image generation.\n*   **Seed Value:** If you get a result you like, save the seed value to"
+      ]
+    },
+    {
+      "id": 5049,
+      "type": "TextGenerateGemma3Prompt",
+      "pos": [
+        -4927.663489895967,
+        2521.050317752439
+      ],
+      "size": [
+        400,
+        402
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 13504
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 13496
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 13498
+        },
+        {
+          "name": "custom_system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_system_prompt"
+          },
+          "link": 13491
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            13483,
+            13487
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "knishika62/ComfyUI-TextGenerateGemma3Prompt",
+        "ver": "eebd206e21ee38516f55f36d9d597a20cc74a826",
+        "Node name for S&R": "TextGenerateGemma3Prompt",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "",
+        "Custom",
+        "You are a helpful assistant that generates detailed video prompts.",
+        1024,
+        true,
+        0.7,
+        64,
+        0.95,
+        0.05,
+        1.05,
+        173631231367862,
+        "randomize"
+      ]
+    },
+    {
+      "id": 5051,
+      "type": "TextGenerateGemma3Prompt",
+      "pos": [
+        -4095.3311531204736,
+        2526.542133648194
+      ],
+      "size": [
+        400,
+        402
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 13505
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 13487
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            13484,
+            13488
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "knishika62/ComfyUI-TextGenerateGemma3Prompt",
+        "ver": "eebd206e21ee38516f55f36d9d597a20cc74a826",
+        "Node name for S&R": "TextGenerateGemma3Prompt",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "",
+        "Custom",
+        "You are a Japanese-to-romaji converter.\n\nYour only job is to find all Japanese dialogue in the text and convert it to romaji (Hepburn romanization).\n\nRULES:\n- Convert ALL Japanese characters (kanji, hiragana, katakana) in dialogue to romaji\n- Keep all English text exactly as-is\n- Do NOT translate Japanese to English\n- Do NOT add parentheses, English translations, or explanations after romaji\n- Do NOT remove, add, or modify any other part of the text\n- Output the complete text without truncation\n\nEXAMPLES:\n\"かっこいいでしょ！\" → \"Kakkoii desho!\"\n\"これすき！\" → \"Kore suki!\"\n\"さいこうね\" → \"Saikou ne\"\n\"めっちゃたのしい！\" → \"Meccha tanoshii!\"\n\"またあしたね！\" → \"Mata ashita ne!\"",
+        1024,
+        true,
+        0.7,
+        64,
+        0.95,
+        0.05,
+        1.05,
+        895450603910785,
+        "randomize"
+      ]
+    },
+    {
+      "id": 5055,
+      "type": "Text _O",
+      "pos": [
+        -4006.344003464773,
+        2334.11350978625
+      ],
+      "size": [
+        298.6502349661125,
+        126.14537202045449
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13486
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-QualityOfLifeSuit_Omar92",
+        "ver": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+        "Node name for S&R": "Text _O",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "cinematic, film photography aesthetic, natural color grading, \nsubtle film grain, muted and desaturated colors, \nwarm shadows, soft highlights, anamorphic lens flare, \nshallow depth of field, organic texture, non-CGI look"
+      ]
+    },
+    {
+      "id": 5056,
+      "type": "Text Concatenate",
+      "pos": [
+        -3581.1132446116844,
+        2320.946063250503
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 13488
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 13486
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13493
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "3.0.1",
+        "Node name for S&R": "Text Concatenate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        ", ",
+        "true"
+      ]
+    },
+    {
+      "id": 5053,
+      "type": "TextGenerateGemma3Prompt",
+      "pos": [
+        -3239.2057969180723,
+        2513.2195095960565
+      ],
+      "size": [
+        400,
+        402
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 13506
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 13493
+        },
+        {
+          "name": "custom_system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_system_prompt"
+          },
+          "link": 13492
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            13485,
+            13508
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "knishika62/ComfyUI-TextGenerateGemma3Prompt",
+        "ver": "eebd206e21ee38516f55f36d9d597a20cc74a826",
+        "Node name for S&R": "TextGenerateGemma3Prompt",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "",
+        "Custom",
+        "You are a helpful assistant that generates detailed video prompts.",
+        1024,
+        true,
+        0.7,
+        64,
+        0.95,
+        0.05,
+        1.05,
+        300446199741603,
+        "randomize"
+      ]
+    },
+    {
+      "id": 5009,
+      "type": "Text Input Switch",
+      "pos": [
+        -5278.295495981076,
+        2420.116756268575
+      ],
+      "size": [
+        154.073828125,
+        66
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 13427
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 13428
+        },
+        {
+          "name": "boolean",
+          "type": "BOOLEAN",
+          "link": 13429
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13491
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "3.0.1",
+        "Node name for S&R": "Text Input Switch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 5015,
+      "type": "Text Input Switch",
+      "pos": [
+        -5275.43878768315,
+        2819.3279095382327
+      ],
+      "size": [
+        154.073828125,
+        66
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 13431
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 13432
+        },
+        {
+          "name": "boolean",
+          "type": "BOOLEAN",
+          "link": 13433
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13492
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "3.0.1",
+        "Node name for S&R": "Text Input Switch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 5050,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -4486.057462683883,
+        2521.5196511413924
+      ],
+      "size": [
+        353.76267452103,
+        364.88208317157205
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 13483
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "Okay, here's a storyboard reflecting your request, formatted as a single paragraph with no line breaks or scene numbers, focusing on cinematic descriptions and adhering to all guidelines.\n\nA wide establishing shot reveals a bustling Tokyo street corner bathed in the soft light of a spring morning. Cherry blossoms cascade from the trees lining the sidewalk, creating a pink-tinged canopy overhead. A young Japanese woman, Yumi, mid-20s, radiating youthful energy, strides confidently down the street, her outfit a playful mix of pastel colors – a light pink pleated skirt, a cream-colored cable-knit sweater tied loosely around her shoulders, and white sneakers with cherry blossom embroidery. The gentle breeze rustles through the blossoms, scattering petals around her as she walks.  The camera follows her in a handheld tracking shot, capturing the vibrant energy of the city around her. Ambient sounds of bustling city life blend with cheerful J-Pop music playing softly from her headphones. Yumi checks her phone, a small smile spreading across her face as she reads a message – “週末明け、頑張ってね！(Ganbatte ne! - Good luck with the week!)” She responds with a quick “うん、私も楽しみ！(Un, watashi mo tanoshimi! - Yeah, I’m looking forward to it too!)”, a hint of excitement in her voice. The camera zooms in slightly as she approaches the entrance to a modern office building, its glass facade reflecting the cherry blossoms. Inside, the lobby is filled with the muted hum of activity and the clatter of heels on the polished floor. Yumi pauses briefly, taking a deep breath and straightening her skirt, a nervous flutter in her stomach. A voiceover narration begins, \"月曜日、また会えるかな？(Tsukiōbi, mata aeru kana? - Will I see him again this week?)\", conveying her anticipation.  She glances at the elevator doors, then smiles audibly to herself, \"今日も可愛いって言われるといいな (Kyō mo kawaii tte iwareru to ii na - I hope he tells me I'm cute today)\", before stepping inside, the elevator doors closing behind her with a soft whoosh. The camera focuses on Yumi's reflection in the glass doors, highlighting her hopeful expression as the elevator ascends, the sounds of the city fading into a background hum."
+      ]
+    },
+    {
+      "id": 5052,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -3653.7251259083923,
+        2527.0114670371477
+      ],
+      "size": [
+        353.76267452103,
+        364.88208317157205
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 13484
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "A wide establishing shot reveals a bustling Tokyo street corner bathed in the soft light of a spring morning. Cherry blossoms cascade from the trees lining the sidewalk, creating a pink-tinged canopy overhead. A young Japanese woman, Yumi, mid-20s, radiating youthful energy, strides confidently down the street, her outfit a playful mix of pastel colors – a light pink pleated skirt, a cream-colored cable-knit sweater tied loosely around her shoulders, and white sneakers with cherry blossom embroidery. The gentle breeze rustles through the blossoms, scattering petals around her as she walks. The camera follows her in a handheld tracking shot, capturing the vibrant energy of the city around her. Ambient sounds of bustling city life blend with cheerful J-Pop music playing softly from her headphones. Yumi checks her phone, a small smile spreading across her face as she reads a message – “週末明け、頑張ってね！(Ganbatte ne!)” She responds with a quick “うん、私も楽しみ！(Un, watashi mo tanoshimi!)”, a hint of excitement in her voice. The camera zooms in slightly as she approaches the entrance to a modern office building, its glass facade reflecting the cherry blossoms. Inside, the lobby is filled with the muted hum of activity and the clatter of heels on the polished floor. Yumi pauses briefly, taking a deep breath and straightening her skirt, a nervous flutter in her stomach. A voiceover narration begins, \"月曜日、また会えるかな？(Tsukiōbi, mata aeru kana?)\" conveying her anticipation. She glances at the elevator doors, then smiles audibly to herself, \"今日も可愛いって言われるといいな (Kyō mo kawaii tte iwareru to ii na)\", before stepping inside, the elevator doors closing behind her with a soft whoosh. The camera focuses on Yumi's reflection in the glass doors, highlighting her hopeful expression as the elevator ascends, the sounds of the city fading into a background hum."
+      ]
+    },
+    {
+      "id": 5066,
+      "type": "LoadImage",
+      "pos": [
+        -4588.937636549505,
+        3062.302002696817
+      ],
+      "size": [
+        310.3677866815342,
+        379.6104011594198
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            13536
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "z-image_06812_.png",
+        "image"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 5062,
+      "type": "Reroute",
+      "pos": [
+        -4375.311521366487,
+        2346.296693657948
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 13541
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            13504,
+            13505,
+            13506
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 5068,
+      "type": "LTXAVTextEncoderLoader",
+      "pos": [
+        -4911.100491246622,
+        2318.101274175283
+      ],
+      "size": [
+        318.444921875,
+        122
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            13541
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "Node name for S&R": "LTXAVTextEncoderLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.6.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "gemma_3_12B_it_fp8_e4m3fn.safetensors",
+        "ltx-2.3-22b-dev-fp8.safetensors",
+        "default"
+      ],
+      "color": "#b9ba68",
+      "bgcolor": "#a5a654"
+    },
+    {
+      "id": 5063,
+      "type": "Reroute",
+      "pos": [
+        -2514.543072127368,
+        3017.73622140757
+      ],
+      "size": [
+        90.4,
+        26
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 13508
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 4987,
+      "type": "PrimitiveBoolean",
+      "pos": [
+        -4945.983221971435,
+        3155.170407442365
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "ON is T2V",
+          "name": "value",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            13429,
+            13433,
+            13481
+          ]
+        }
+      ],
+      "title": "bypass_i2v",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.16.0",
+        "Node name for S&R": "PrimitiveBoolean",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.6.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        true
+      ],
+      "color": "#844242",
+      "bgcolor": "#702e2e"
+    },
+    {
+      "id": 5039,
+      "type": "VRGDG_ImageSwitch4",
+      "pos": [
+        -5343.124409394649,
+        3203.746046631133
+      ],
+      "size": [
+        277.948828125,
+        118
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 13536
+        },
+        {
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "index",
+          "type": "STRING",
+          "widget": {
+            "name": "index"
+          },
+          "link": 13480
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            13496
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vrgamegirl19/comfyui-vrgamedevgirl",
+        "ver": "8a3bf008e4b0a4ffc1c376d82e921898d1b5682f",
+        "Node name for S&R": "VRGDG_ImageSwitch4",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "1"
+      ]
+    },
+    {
+      "id": 5061,
+      "type": "Text _O",
+      "pos": [
+        -4213.007671389811,
+        3072.873612992949
+      ],
+      "size": [
+        535.1241850779852,
+        378.4643218368901
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "prompt",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13498
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-QualityOfLifeSuit_Omar92",
+        "ver": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+        "Node name for S&R": "Text _O",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.6.2"
+        }
+      },
+      "widgets_values": [
+        "若くて可愛い日本人モデルを使った口紅のCM\n## 尺\n-10秒\n## コンセプト\n- 春、桜、可愛い\n## ロケーション\n-満開に咲くおおきな桜の木の下\n## ナレーション\n-日本語で春と口紅をキーワードとしたセリフ\n## 構成\n- アップのままアングルを変える\n- 最後、大量の桜の上に置いた口紅のアップ\n- BGMあり"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    }
+  ],
+  "links": [
+    [
+      13427,
+      5010,
+      0,
+      5009,
+      0,
+      "STRING"
+    ],
+    [
+      13428,
+      5011,
+      0,
+      5009,
+      1,
+      "STRING"
+    ],
+    [
+      13429,
+      4987,
+      0,
+      5009,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      13431,
+      5014,
+      0,
+      5015,
+      0,
+      "STRING"
+    ],
+    [
+      13432,
+      5013,
+      0,
+      5015,
+      1,
+      "STRING"
+    ],
+    [
+      13433,
+      4987,
+      0,
+      5015,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      13477,
+      5046,
+      0,
+      5043,
+      0,
+      "STRING"
+    ],
+    [
+      13478,
+      5047,
+      0,
+      5043,
+      1,
+      "STRING"
+    ],
+    [
+      13479,
+      5043,
+      0,
+      5048,
+      0,
+      "STRING"
+    ],
+    [
+      13480,
+      5048,
+      0,
+      5039,
+      4,
+      "STRING"
+    ],
+    [
+      13481,
+      4987,
+      0,
+      5043,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      13483,
+      5049,
+      0,
+      5050,
+      0,
+      "STRING"
+    ],
+    [
+      13484,
+      5051,
+      0,
+      5052,
+      0,
+      "STRING"
+    ],
+    [
+      13485,
+      5053,
+      0,
+      5054,
+      0,
+      "STRING"
+    ],
+    [
+      13486,
+      5055,
+      0,
+      5056,
+      1,
+      "STRING"
+    ],
+    [
+      13487,
+      5049,
+      0,
+      5051,
+      2,
+      "STRING"
+    ],
+    [
+      13488,
+      5051,
+      0,
+      5056,
+      0,
+      "STRING"
+    ],
+    [
+      13491,
+      5009,
+      0,
+      5049,
+      3,
+      "STRING"
+    ],
+    [
+      13492,
+      5015,
+      0,
+      5053,
+      3,
+      "STRING"
+    ],
+    [
+      13493,
+      5056,
+      0,
+      5053,
+      2,
+      "STRING"
+    ],
+    [
+      13496,
+      5039,
+      0,
+      5049,
+      1,
+      "IMAGE"
+    ],
+    [
+      13498,
+      5061,
+      0,
+      5049,
+      2,
+      "STRING"
+    ],
+    [
+      13504,
+      5062,
+      0,
+      5049,
+      0,
+      "CLIP"
+    ],
+    [
+      13505,
+      5062,
+      0,
+      5051,
+      0,
+      "CLIP"
+    ],
+    [
+      13506,
+      5062,
+      0,
+      5053,
+      0,
+      "CLIP"
+    ],
+    [
+      13508,
+      5053,
+      0,
+      5063,
+      0,
+      "STRING"
+    ],
+    [
+      13536,
+      5066,
+      0,
+      5039,
+      1,
+      "IMAGE"
+    ],
+    [
+      13541,
+      5068,
+      0,
+      5062,
+      0,
+      "CLIP"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 152,
+      "title": "System Prompt Switcher",
+      "bounding": [
+        -5773.653802885365,
+        2215.124410225816,
+        714.6288264276509,
+        836.4231981606363
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 155,
+      "title": "Sora2 Like lite",
+      "bounding": [
+        -4961.371842017995,
+        2223.4063003537217,
+        2556.532974844854,
+        754.5146774196899
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 156,
+      "title": "Image SW",
+      "bounding": [
+        -5769.053512541285,
+        3100.1925845701335,
+        715.5741326105535,
+        429.80553589701503
+      ],
+      "color": "#444",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "frontendVersion": "1.41.21",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "workspace_info": {
+      "id": "elBQFQknIoLYTEwIloQuw"
+    },
+    "node_versions": {
+      "comfy-core": "0.3.30",
+      "comfyui-kjnodes": "1.0.8"
+    },
+    "workflowRendererVersion": "LG",
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "linearData": {
+      "inputs": [
+        [
+          5061,
+          "text"
+        ],
+        [
+          5000,
+          "prompt"
+        ],
+        [
+          4997,
+          "value"
+        ],
+        [
+          4998,
+          "value"
+        ],
+        [
+          4988,
+          "value"
+        ],
+        [
+          5034,
+          "value"
+        ],
+        [
+          4987,
+          "value"
+        ],
+        [
+          5066,
+          "image"
+        ]
+      ],
+      "outputs": [
+        4852
+      ]
+    },
+    "ds": {
+      "scale": 0.6903486840448174,
+      "offset": [
+        5991.075410170641,
+        -2036.963120833223
+      ]
+    }
+  },
+  "version": 0.4
+}
