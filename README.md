@@ -9,6 +9,7 @@ ComfyUI用のワークフロー集です。
 │   └── LTX-2_S2V.json
 ├── sora2-like/     # LLMを使ったSora2風動画生成ワークフロー
 │   ├── make_scenario_by_LLM.json
+│   ├── make_scenario_by_gemma3.json
 │   ├── scenario_t2v.md
 │   ├── scenario_i2v.md
 │   ├── ltx2_prompt_t2v.md
