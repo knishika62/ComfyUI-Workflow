@@ -1,0 +1,250 @@
+{
+  "1": {
+    "inputs": {
+      "mode": "reference_edit (REF2VA)",
+      "prompt": "a young woman <Picture 3> wearing a <Pictune 2> coustume, posing <Picture 1>, simple light dray background",
+      "width": 1280,
+      "height": 1920,
+      "frame_preset": "single image | 1 frame (image VAE)",
+      "optimize_prompt": false,
+      "preserve_strength": 0.6,
+      "source_fit": "crop_center",
+      "reference_size": "max_identity_2048",
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "source_image": [
+        "6",
+        0
+      ],
+      "reference_image_2": [
+        "7",
+        0
+      ],
+      "reference_image_3": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "H3ImagePrepare",
+    "_meta": {
+      "title": "MiniMax H3 Image • Advanced Combined Prepare",
+      "cnr_id": "minimax-h3-image-studio",
+      "ver": "47dea30d0bf07e7340ef0cc97e8174a15edf55b9"
+    }
+  },
+  "2": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "type": "stable_diffusion",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP",
+      "cnr_id": "comfy-core",
+      "ver": "0.34.0"
+    }
+  },
+  "3": {
+    "inputs": {
+      "vae_name": "minimax_h3_lightvae_lite_vae_int8_convrot.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE",
+      "cnr_id": "comfy-core",
+      "ver": "0.34.0"
+    }
+  },
+  "5": {
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model",
+      "cnr_id": "comfy-core",
+      "ver": "0.34.0"
+    }
+  },
+  "6": {
+    "inputs": {
+      "image": "full_single_P020_front.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "7": {
+    "inputs": {
+      "image": "custom_costume_moon_001.webp"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "8": {
+    "inputs": {
+      "image": "f15a069b8a3.webp"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "342": {
+    "inputs": {
+      "lora_name": "pika_h3_flex_ref2va_v1_bf16.safetensors",
+      "strength_model": 1,
+      "model": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Load LoRA",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "346": {
+    "inputs": {
+      "model": [
+        "342",
+        0
+      ],
+      "conditioning": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "347": {
+    "inputs": {
+      "noise_seed": 42
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "348": {
+    "inputs": {
+      "sampler_name": "lcm"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "349": {
+    "inputs": {
+      "sigmas": "1.0, 0.972973, 0.923077, 0.8, 0.571429, 0.333333, 0.0"
+    },
+    "class_type": "ManualSigmas",
+    "_meta": {
+      "title": "ManualSigmas",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "350": {
+    "inputs": {
+      "noise": [
+        "347",
+        0
+      ],
+      "guider": [
+        "346",
+        0
+      ],
+      "sampler": [
+        "348",
+        0
+      ],
+      "sigmas": [
+        "349",
+        0
+      ],
+      "latent_image": [
+        "1",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "352": {
+    "inputs": {
+      "vae_name": "sol_h3_vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load Sol-H3 VAE INT8 (video decode)",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "353": {
+    "inputs": {
+      "samples": [
+        "350",
+        0
+      ],
+      "vae": [
+        "352",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  },
+  "357": {
+    "inputs": {
+      "images": [
+        "353",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image",
+      "cnr_id": "comfy-core",
+      "ver": "0.43.0"
+    }
+  }
+}
